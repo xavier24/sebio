@@ -17,7 +17,7 @@
             <footer></footer>
         </section>
     </section>
-    <section id="marque">
+    <section id="marque" class="sidebar_cache">
         <a href="#" class="bouton_action"><h1 class="titre-filtre">Marques</h1><i class="icon-down-open"></i></a>
         <section id="ouvert_marque">
             <input type="text" name="recherche" placeholder="Recherche" />	
@@ -64,23 +64,13 @@
             <span id="fermeture_marque" class="bouton_action"><i class="icon-up-open"></i></span>
         </section>
     </section>
-    <div class="sidebar_promo">
+    <div class="sidebar_promo sidebar_cache">
         <p><span>1 seul article acheté&nbsp;? 1€ de frais d'envoi</span></p>
         <a href="" title=""><p>Enregistrez-vous et recevez</p>
         <img src="img/promo-5pourcent.png" title="" alt="" />
         <p>sur votre 1<sup>ère</sup> commande&nbsp;!</p></a>
         <p><span>Frais d'envoi offerts à partir de 60€ de commande&nbsp;!</span></p>
     </div>
-    <div class="payement">
-        <p>
-            <img src="img/doulas.jpg" title="" alt="" /><img src="img/colissimo.png" title="" alt="" /><img src="img/fed.png" title="" alt="" />
-        </p>
-        <p>Paiement 100% Sécurisé:
-            <img src="img/cybermutlogo.png" />
-            <img src="img/masterCard-Visa-CB.png" />
-        </p>
-        <p>
-            <img src="img/paypal.png" />
-        </p>
-    </div>
+    <p class="sidebar_cache"><img src="img/doulas.jpg" title="" alt="" /><img src="img/colissimo.png" title="" alt="" /><img src="img/fed.png" title="" alt="" /></p>
+    <i class="icon-down-open i_sidebar_cache"></i>
 </aside>

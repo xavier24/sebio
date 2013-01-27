@@ -28,30 +28,24 @@
 
         <!-- Add your site or application content here -->
         <header id="header">
-            <h1>SeBIO - Produits naturels, bio et écologiques pour toute la famille.</h1>
+            <a href="index.php">
+                <h1>SeBIO - Produits naturels, bio et écologiques pour toute la famille.</h1>
+            </a>
             <div id="connex">
-                <p class="log connexion">Connexion</p>
-                <form method="post">
-                    <input type="text" class="input-text" placeholder="email"/>
-                    <input type="text" class="input-text" placeholder="mot de passe"/>
-                    <input type="submit" class="submit" value="connexion"/>
-                </form>
-                <a href="inscription.html"><p class="log">Inscription</p></a>
-                
-                
+                <a href="connexion.php"><p class="log">Connexion / Inscription</p></a>
             </div>
             <div id="recherche" title="recherche">
                 <form name="metasearch" method="POST" accept-charset="UTF-8" action=''>
                     <input type="text" name="recherche" placeholder="Recherche" /><button type="Submit"><span class="icon-search"></span></button>
                 </form>
-                <p><a href="#" title="Effectuer une recherche avancée">Recherche avancée</a></p>
+                <!--<p><a href="#" title="Effectuer une recherche avancée">Recherche avancée</a></p>-->
             </div>
         </header>
         <nav>
             <h1 class="invisible">Menu</h1>
             <ul>
-                <li><a href="" title="">Bons plans</a>
-                </li><li><a href="" title="">Maman et bébé</a>
+                <li><a href="categorie.php" title="">Bons plans</a>
+                </li><li><a href="categorie.php" title="">Maman et bébé</a>
                     <section class="sous-menu">
                     <h1 class="invisible">Maman et bébé</h1>
                         <section class="col3">
@@ -93,10 +87,10 @@
                                 b
                         </div>
                     </section>
-                </li><li><a href="" title="">Vêtements</a>
-                </li><li><a href="" title="">Santé et nature</a>
-                </li><li><a href="" title="">Maison et loisir</a>
-                </li><li><a href="" title="">Naissances</a></li>
+                </li><li><a href="categorie.php" >Vêtements</a>
+                </li><li><a href="categorie.php" >Santé et nature</a>
+                </li><li><a href="categorie.php" title="">Maison et loisir</a>
+                </li><li><a href="categorie.php" title="">Naissances</a></li>
             </ul>
         </nav>
         <section id="contenu">

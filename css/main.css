@@ -28,7 +28,7 @@ a{
     background-color:rgba(255,255,255,0.7);
     display:inline-block;
     height:20px;
-    width:100px;
+    width:200px;
     text-align: center;
     padding-top:10px;
     border-radius:5px;
@@ -126,9 +126,9 @@ nav li>a{
     width: 100%;
     padding-top: 20px;
     padding-right: 200px;
-    border:1px solid black;
     vertical-align: top;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 .promo{
 	border:3px solid black;
@@ -141,6 +141,7 @@ nav li>a{
     -moz-box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 30px;
 }
 .contenu article>h1{
     font-size:1.3em;
@@ -149,7 +150,7 @@ nav li>a{
     font-family: 'Courgette', cursive;
     margin-bottom:10px;
 }
-.produit{
+.offre_produit{
     border:1px solid black;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.7) inset;
     padding:15px 10px;
@@ -218,20 +219,86 @@ nav li>a{
     border-radius: 5px 5px 5px 5px;
     box-shadow: 1px 1px 0 #111111;
     display: inline-block;
-    float: right;
-    height: 40px;
     margin-top: 18px;
     padding: 5px;
+    position: absolute;
+    bottom:0;
+    right: 0;
 }
 .ajout_panier:hover{
     background-color: #555;
 }
-.offre .produit{
+.offre .offre_produit{
     background-image: linear-gradient(bottom, #FF7F00 10%, rgba(255, 127, 0, 0.5) 28%, rgba(255, 255, 255, 0) 55%);
     background-image: -o-linear-gradient(bottom, #FF7F00 10%, rgba(255, 127, 0, 0.5) 28%, rgba(255, 255, 255, 0) 55%);
     background-image: -moz-linear-gradient(center bottom , #FF7F00 10%, rgba(255, 127, 0, 0.5) 28%, rgba(255, 255, 255, 0) 55%);
     background-image: -webkit-linear-gradient(bottom,#FF7F00 10%, rgba(255, 127, 0, 0.5) 28%, rgba(255, 255, 255, 0) 55%);
     background-image: -ms-linear-gradient(bottom, #FF7F00 10%, rgba(255, 127, 0, 0.5) 28%, rgba(255, 255, 255, 0) 55%);	
+}
+.produit{
+    -moz-box-sizing: border-box;
+    width: 33.33%;
+    display: inline-block;
+    padding: 5px;
+    min-width: 177px;
+}
+.info_produit {
+    padding: 7px;
+    -moz-box-shadow: 0 0 70px 3px #B38C19 inset, 2px 2px 5px #555;
+    -webkit-box-shadow: 0 0 70px 3px #B38C19 inset, 2px 2px 5px #555;
+    box-shadow: 0 0 70px 3px #B38C19 inset, 2px 2px 5px #555;
+}
+.nom_produit{
+    color: #222222;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.nom_produit:hover{
+    color:#FF7F00;
+}
+.image_produit{
+    width: 100%;
+    text-align: center;
+}
+.image_produit a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.image_produit:hover{
+    -moz-box-shadow:0 0 5px 2px #AAA ;
+    -webkit-box-shadow:0 0 5px 5px #FFF ;
+    box-shadow:0 0 5px 2px #AAA ;
+}
+.info,.photo{
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    width: 50%;
+    border: 1px solid black;
+    vertical-align: top;
+    padding: 20px 10px;
+}
+.fiche_produit p{
+    margin-bottom: 10px;
+}
+ol{
+    text-align: right;
+    margin-top: 10px;
+}
+ol li{
+    display: inline-block;
+    height: 1.6em;
+    min-width: 1.6em;
+}
+ol li a{
+    color:#D66C03;
+    padding: 3px 5px;
+}
+ol li a:hover{
+    background:#D66C03;
+    color:#FFF;
+    border-radius: 3px;
 }
 /*sidebar*/
 .sidebar{
@@ -285,6 +352,7 @@ nav li>a{
     right:5px;
 }
 #detail_panier{
+    display: none;
     position:absolute;
     top:55px;
     right:125px;
@@ -411,7 +479,7 @@ nav li>a{
     color:white;
     line-height:1.2em;
     margin-top:20px;
-    margin-bottom:60px;
+    margin-bottom:20px;
 }
 .sidebar_promo a{
     color:white;
@@ -426,14 +494,6 @@ nav li>a{
     font-weight:bold;
     padding:10px 0;
 }
-.payement{
-    text-align: center;
-    color:white;
-    font-size:0.7em;
-}
-.payement p{
-    margin-top:20px;
-}
 sup{
     position: relative;
     bottom: 1px;
@@ -442,18 +502,30 @@ sup{
     vertical-align:super;
     text-decoration:none;
 }
+.i_sidebar_cache{
+    width: 100%;
+    line-height:20px;
+    font-size: 2.5em;
+    text-align: center;
+    color:#FFF;
+    display: none;
+}
 footer{
     clear: both;
     background-color:black;
     color:white;
-    padding:10px 80px;
+    padding:10px 20px;
+    line-height: 1.2em;
+    text-align: center;
 }
 footer a:hover{
     color:darkorange;
 }
 .newsletter {
-    padding:10px 80px;
-    border-bottom:1px solid #222;
+    display: inline-block;
+    text-align: left;
+    padding:10px 0 4px 0;
+    width: 220px;
 }
 .newsletter p:first-child{
     font-size:1.9em;
@@ -470,11 +542,20 @@ footer a:hover{
     display:inline-block;
 }
 .newsletter input{
-    width:190px;
-    margin-left:15px;
+    width:180px;
+}
+.payement{
+    text-align: left;
+    color:white;
+    font-size:0.9em;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 25px;
 }
 .menu_footer{
+    margin-top: 10px;
     text-align:center;
+    border-top:1px solid #222;
     font-size:0.8em;
     padding:20px 0 30px;
 }
@@ -554,7 +635,14 @@ footer a:hover{
     }
 }
 /*---Tablette et plus petit---*/
-@media only screen and (max-width:767px), only screen and (max-device-width: 767px){}
+@media only screen and (max-width:767px), only screen and (max-device-width: 767px){
+    .payement{
+        width:215px;
+    }
+    .produit{
+        width: 50%;
+    }
+}
 /*---tablette---*/    
 @media only screen and (min-width:481px) and (max-width:767px), only screen and (min-device-width: 481px)and (max-device-width:767px){
     #header h1{
@@ -572,20 +660,52 @@ footer a:hover{
     .offre,.nouveauté{
         width: 100%;
     }
-    .offre{
-        -padding-right: 2%;
-    }
-    .nouveauté{
-        -padding-left: 2%;
-    }
 }
 /*---petite tablette et plus petit---*/
-@media only screen and (max-width:550px){
+@media only screen and (max-width:650px){
     #contenu{
-        background: #AAAAFF;
+        -background: #AAAAFF;
     }
-    .sidebar_promo{
+    .sidebar{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-radius: 0 0 0 20px;
+        width:85px;
+        z-index: 99;
+        position: absolute;
+        right: 0;
+    }
+    #panier{
+        margin-bottom: 0;
+    }
+    #panier .bouton_action{
+        height: 34px;
+    }
+    #panier h1{
+        font-size: 1.3em;
+        line-height: 30px;
+        text-indent: -123px;
+        overflow:hidden;
+        color:white;
+    }
+    .bouton_action h2{
+        display: none;
+    }
+    #panier a img{
+        top:2px;
+    }
+    .sidebar_cache{
         display:none
+    }
+    .i_sidebar_cache{
+        display: inline-block;
+    }
+    .contenu{
+        padding-right: 20px;
+        padding-top: 90px;
+    }
+    .offre,.nouveauté{
+        width: 100%;
     }
 }
 /*---plus grand que mobile*/
@@ -608,5 +728,15 @@ footer a:hover{
     nav li{
         width: 50%;
     }
-    
+    .payement{
+        padding-right: 0;
+    }
+    .info,.photo{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:420px), only screen and (max-device-width: 420px){/*------mobile-----*/
+    .produit{
+        width: 100%;
+    }
 }

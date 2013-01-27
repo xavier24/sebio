@@ -1,5 +1,10 @@
 </section>
         <footer>
+            <div class="payement">
+                <p>Paiement 100% Sécurisé:</p>
+                <img src="img/paypal.jpg" />
+                <img src="img/credit_mut.jpg" />
+            </div>
             <div class="newsletter">
                 <p>Newsletter</p>
                 <form>
