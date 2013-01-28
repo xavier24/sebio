@@ -26,13 +26,21 @@
                 console.log('ouvrir');
             }
         }
-	
+	var sousMenu = function(e){
+            if($('.sous-menu').is(":visible")){
+                $('.sous-menu').hide("normal");
+            }
+            else{
+                $('.sous-menu').show("normal");
+            }
+        }
+        
 	$( function () {
 
 		// --- onload routines
 	sidebarCache = $('.sidebar_cache');
         iSidebar = $('.i_sidebar_cache');
-        
+        $('.onglet').on("click",sousMenu);
         
         
         iSidebar.on("click",afficher_sidebar);

@@ -7,6 +7,8 @@ body{
     margin:0 auto;
     font-family: Tahoma,"Myriad pro",arial,sans-serif;
     font-size:16px;
+    -moz-box-shadow:0 0 4px 1px #000000;
+    -webkit-box-shadow:0 0 4px 1px #000000;
     box-shadow:0 0 4px 1px #000000;
 }
 a{
@@ -31,10 +33,14 @@ a{
     width:200px;
     text-align: center;
     padding-top:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
     border-radius:5px;
     cursor:pointer;
     color:#000;
     font-weight: bold;
+    -moz-box-shadow:-1px -1px 3px #000,inset 0 0 3px #222;
+    -webkit-box-shadow:-1px -1px 3px #000,inset 0 0 3px #222;
     box-shadow:-1px -1px 3px #000,inset 0 0 3px #222;
     position:absolute;
     top:0;
@@ -44,6 +50,8 @@ a{
     right:101px;
 }
 .log:hover,.log:active{
+    -moz-box-shadow:-1px -1px 0 #222,inset -1px -1px 0 #fff,inset 0 0 3px #EEE;
+    -webkit-box-shadow:-1px -1px 0 #222,inset -1px -1px 0 #fff,inset 0 0 3px #EEE;
     box-shadow:-1px -1px 0 #222,inset -1px -1px 0 #fff,inset 0 0 3px #EEE;
     top:3px;
 }
@@ -51,8 +59,12 @@ a{
     position:absolute;
     top:-5px;
     width:100%;
+    -moz-border-radius:0 0 5px 5px;
+    -webkit-border-radius:0 0 5px 5px;
     border-radius:0 0 5px 5px;
     font-size:0.8em;
+    -moz-box-shadow:1px 1px 1px #000000 inset, -1px 0 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow:1px 1px 1px #000000 inset, -1px 0 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow:1px 1px 1px #000000 inset, -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 }
 #connex form{
@@ -95,6 +107,8 @@ nav a:hover{
 }
 nav li{
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     background:rgba(255, 255, 255, 0.1);
     margin-top: 1px;
 }
@@ -103,7 +117,9 @@ nav li:hover{
 }
 nav li{
     display:inline-block;
+    cursor:pointer;
 }
+
 nav li>a{
     display:inline-block;
     height:100%;
@@ -116,13 +132,56 @@ nav li>a{
 }
 .sous-menu{
     display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    text-align: left;
+    background: white;
+    z-index: 9999999;
+    padding:20px;
+    line-height:1.2em;
+}
+.sous-menu h1{
+font-size:1em;
+color: darkorange;
+text-decoration:underline;
+margin-bottom:0;
+}
+.sous-menu a{
+color:green;
+font-size:0.8em;
+}
+.sous-menu h1>a{
+color:darkorange;
+}
+.col-promo{
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24%;
+    vertical-align: top;
+}
+.col-menu{
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 38%;
+    vertical-align: top;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.7);
 }
 /*Contenu*/
 #contenu{
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .contenu{
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     padding-top: 20px;
     padding-right: 200px;
@@ -139,6 +198,8 @@ nav li>a{
 }
 .offre,.nouveauté{
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 30px;
@@ -152,6 +213,8 @@ nav li>a{
 }
 .offre_produit{
     border:1px solid black;
+    -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.7) inset;
+    -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.7) inset;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.7) inset;
     padding:15px 10px;
     height: 440px;
@@ -186,7 +249,9 @@ nav li>a{
 }
 .ancien_prix{
     background-color: #333333;
-    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     color: white;
     display: inline-block;
     height: 20px;
@@ -197,7 +262,9 @@ nav li>a{
 }
 .prix{
     background-color: #333333;
-    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     color: white;
     display: inline-block;
     height: 20px;
@@ -216,7 +283,11 @@ nav li>a{
 }
 .ajout_panier{
     background-color: #333333;
-    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 0 #111111;
+    -webkit-box-shadow: 1px 1px 0 #111111;
     box-shadow: 1px 1px 0 #111111;
     display: inline-block;
     margin-top: 18px;
@@ -237,6 +308,8 @@ nav li>a{
 }
 .produit{
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 33.33%;
     display: inline-block;
     padding: 5px;
@@ -273,14 +346,24 @@ nav li>a{
 }
 .info,.photo{
     display: inline-block;
-    -moz-box-sizing: border-box;
-    width: 50%;
-    border: 1px solid black;
     vertical-align: top;
     padding: 20px 10px;
 }
+.fiche_produit h1{
+    line-height: 1.2em;
+}
 .fiche_produit p{
     margin-bottom: 10px;
+    line-height: 1.2em;
+}
+.fiche_produit .photo img{
+    margin-top: 40px;
+}
+.info_prix form{
+    margin-top: 50px;
+}
+.info_prix input{
+    width: 50px;
 }
 ol{
     text-align: right;
@@ -298,6 +381,8 @@ ol li a{
 ol li a:hover{
     background:#D66C03;
     color:#FFF;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 /*sidebar*/
@@ -309,12 +394,17 @@ ol li a:hover{
     padding-right: 20px;
     width:140px;
     float:right;
+    -moz-border-radius:0 0 0 100px;
+    -webkit-border-radius:0 0 0 100px;
     border-radius:0 0 0 100px;
     margin-bottom: 20px;
+    
 }
 .bouton_action{
     background-color: #FF7F00;
-    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     box-shadow: 2px 2px 0 #954C03;
     color: white;
     display: inline-block;
@@ -334,6 +424,9 @@ ol li a:hover{
 #panier{
     position:relative;
     margin-bottom: 20px;
+}
+#panier:hover #detail_panier{
+    display: block;
 }
 #panier h1{
     font-size:0.9em;
@@ -363,6 +456,8 @@ ol li a:hover{
 }
 #detail_panier header{
     background-color:#FF7F00;
+    -moz-box-shadow: 0 2px 0 #804000, 1px 5px 4px #000000;
+    -webkit-box-shadow: 0 2px 0 #804000, 1px 5px 4px #000000;
     box-shadow: 0 2px 0 #804000, 1px 5px 4px #000000;
     margin-bottom:15px;
     padding:10px 5px 5px;
@@ -423,10 +518,14 @@ ol li a:hover{
     padding-top:1px;
 }
 .supprimer_panier:hover{
+    -moz-box-shadow: inset 1px 1px 0 #BBB;
+    -webkit-box-shadow: inset 1px 1px 0 #BBB;
     box-shadow: inset 1px 1px 0 #BBB;
 }
 #detail_panier footer{
     background-color:#FF7F00;
+    -moz-box-shadow: 0 -2px 0 #804000;
+    -webkit-box-shadow: 0 -2px 0 #804000;
     box-shadow: 0 -2px 0 #804000;
     margin-top:5px;
 }
@@ -437,7 +536,6 @@ ol li a:hover{
     display:inline-block;
 }
 #ouvert_marque{
-    -display:none;
     background-color: #D66C03;
     margin-left: 6px;
     width: 125px;
@@ -624,6 +722,12 @@ footer a:hover{
     nav li{
        width: 16.5%;
     }
+    nav li:hover .sous-menu{
+    display: block;
+    }
+    nav li:hover .sous-menu,nav li:active .sous-menu{
+        display: block;
+    }
     .offre,.nouveauté{
         width: 50%;
     }
@@ -657,18 +761,26 @@ footer a:hover{
     nav li{
        width: 33%; 
     }
+    .sous-menu{
+        top: 108px;
+    }
+    .col-promo{
+        width: 1%;
+    }
+    .col-menu{
+        width:49.5%;
+    }
     .offre,.nouveauté{
         width: 100%;
     }
 }
 /*---petite tablette et plus petit---*/
 @media only screen and (max-width:650px){
-    #contenu{
-        -background: #AAAAFF;
-    }
     .sidebar{
         padding-bottom: 0;
         margin-bottom: 0;
+        -moz-border-radius: 0 0 0 20px;
+        -webkit-border-radius: 0 0 0 20px;
         border-radius: 0 0 0 20px;
         width:85px;
         z-index: 99;
@@ -708,10 +820,6 @@ footer a:hover{
         width: 100%;
     }
 }
-/*---plus grand que mobile*/
-@media only screen and (min-width:481px){
-    
-}
 /*---mobile---*/
 @media only screen and (max-width:480px), only screen and (max-device-width: 480px){/*------mobile-----*/
     #header{
@@ -728,11 +836,18 @@ footer a:hover{
     nav li{
         width: 50%;
     }
+    .sous-menu{
+        top: 150px;
+    }
+    .col-promo{
+        width: 1%;
+        height: 1px;
+    }
+    .col-menu{
+        width:99%;
+    }
     .payement{
         padding-right: 0;
-    }
-    .info,.photo{
-        width: 100%;
     }
 }
 @media only screen and (max-width:420px), only screen and (max-device-width: 420px){/*------mobile-----*/

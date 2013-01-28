@@ -45,51 +45,41 @@
             <h1 class="invisible">Menu</h1>
             <ul>
                 <li><a href="categorie.php" title="">Bons plans</a>
-                </li><li><a href="categorie.php" title="">Maman et bébé</a>
+                </li><li class="onglet"><a>Maman et bébé</a>
                     <section class="sous-menu">
-                    <h1 class="invisible">Maman et bébé</h1>
-                        <section class="col3">
-                            <h1 class="invisible">Nouveauté dans Maman et bébé</h1>
-                            <article>
-                                <figure>
-                                    <h1>Nouveau</h1>
-                                    <img src="" width="" height="" title="" alt="" />
-                                    <p>Assiette Bonne Nuit Farandole de Légumes Verts - Riz (dès 12 mois) <span class="text-color">Babybio</span></p>
-                                </figure>
-                            </article>
-                        </section><section class="col-menu col4">
+                    <h1 class="titre-filtre">Maman et bébé</h1>
+                        <section class="col-promo">
+                            <img src="img/ELIOTE-00070-Medium-6-171348_L.jpg" width="" height="" title="" alt="" />
+                        </section><section class="col-menu">
                             <div>
-                                <h1><a href="">Grossesse et allaitement</a></h1>
-                                <a href="">beauté et soin pendant la grossesse</a>, <a href="">allaitement</a>
+                                <h1><a href="categorie.php">Grossesse et allaitement</a></h1>
+                                <a href="categorie.php">beauté et soin pendant la grossesse</a>, <a href="categorie.php">allaitement</a>
                             </div>
                             <div>
-                                <h1><a href="">Bébé et enfant</a></h1>
-                                <a href="">la toilette</a>, <a href="">bien-être et santé</a>, <a href="">portage</a>, <a href="">autour du sommeil</a>, <a href="">biberons et sucettes</a>, <a href="">produit solaire</a>
+                                <h1><a href="categorie.php">Bébé et enfant</a></h1>
+                                <a href="categorie.php">la toilette</a>, <a href="categorie.php">bien-être et santé</a>, <a href="categorie.php">portage</a>, <a href="categorie.php">autour du sommeil</a>, <a href="categorie.php">biberons et sucettes</a>, <a href="categorie.php">produit solaire</a>
                             </div>
                             <div>
-                                <h1><a href="">Couches</a></h1>
-                                <a href="">couches lavables</a>, <a href="">couches jetables</a>
+                                <h1><a href="categorie.php">Couches</a></h1>
+                                <a href="categorie.php">couches lavables</a>, <a href="categorie.php">couches jetables</a>
                             </div>
-                        </section><section class="col-menu col4">
+                        </section><section class="col-menu">
                             <div>
-                                <h1><a href="">Locations</a></h1>
-                                <a href="">Location de porte-bébés</a>
-                            </div>
-                            <div>
-                                <h1><a href="">Alimentation bio pour bébé</a></h1>	
-                                <a href="">laits infantiles</a>, <a href="">céréales</a>, <a href="">petits pots légumes</a>, <a href="">petits pots fruits et desserts</a>, <a href="">biscuits</a>, <a href="">boissons, accessoires et ustensiles</a>
+                                <h1><a href="categorie.php">Locations</a></h1>
+                                <a href="categorie.php">Location de porte-bébés</a>
                             </div>
                             <div>
-                                <h1><a href="">Jeux et Jouets</a></h1>
-                                <a href="">jeux de société</a>, <a href="">puzzles et jeux de logiques</a>, <a href="">jouets</a>, <a href="">jeux d'éveil</a>, <a href="">activités manuelles</a>
+                                <h1><a href="categorie.php">Alimentation bio pour bébé</a></h1>	
+                                <a href="categorie.php">laits infantiles</a>, <a href="categorie.php">céréales</a>, <a href="categorie.php">petits pots légumes</a>, <a href="categorie.php">petits pots fruits et desserts</a>, <a href="categorie.php">biscuits</a>, <a href="categorie.php">boissons, accessoires et ustensiles</a>
                             </div>
-                        </section><div class="col1 promo">
-                                b
-                        </div>
+                            <div>
+                                <h1><a href="categorie.php">Jeux et Jouets</a></h1>
+                                <a href="categorie.php">jeux de société</a>, <a href="categorie.php">puzzles et jeux de logiques</a>, <a href="categorie.php">jouets</a>, <a href="categorie.php">jeux d'éveil</a>, <a href="categorie.php">activités manuelles</a>
+                            </div>
                     </section>
-                </li><li><a href="categorie.php" >Vêtements</a>
-                </li><li><a href="categorie.php" >Santé et nature</a>
-                </li><li><a href="categorie.php" title="">Maison et loisir</a>
+                </li><li class="onglet"><a>Vêtements</a>
+                </li><li class="onglet"><a>Santé et nature</a>
+                </li><li class="onglet"><a>Maison et loisir</a>
                 </li><li><a href="categorie.php" title="">Naissances</a></li>
             </ul>
         </nav>

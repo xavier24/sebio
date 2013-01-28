@@ -10,6 +10,10 @@
         <p>Ce soin est enrichi en huile d'argan bio, pulpe d'argan bio et beurre de karité bio pour offrir aux mains sèches et abîmées une nutrition optimale. Sa texture non grasse pénètre rapidement pour un confort d'utilisation unique.</p>
         <p>Les mains sont douces, le contour d'ongle impeccable.</p>
         <div class="info_prix">
+            <form>
+                <label>Quantité
+                <input type="number" value="1"></label>
+            </form>
             <p class="prix">11,80&nbsp;€</p>
             <a class="ajout_panier" href="#"><img src="img/ajout_panier2.png" title="" alt="" /></a>
         </div>
